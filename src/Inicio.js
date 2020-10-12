@@ -10,10 +10,11 @@ const Inicio = () =>{
         
             <div className="p-5">
             <h1 className=" text-white text-center ">Bienvenidos</h1>
+           <div className="content-vacio"></div> 
         
          <br></br>
-          <Button className="btn-inicio1 mt-5 form-control ">Registrarse</Button>  <br></br>
-          <Button  className="btn-inicio2  mt-1 form-control" > Iniciar sesión</Button>
+          <Button className="btn-inicio1  form-control ">Registrarse</Button>  <br></br>
+          <Button  className="btn-inicio2 form-control" > Iniciar sesión</Button>
           </div>
           </div>
          </>
