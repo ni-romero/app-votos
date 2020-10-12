@@ -1,18 +1,19 @@
 import React from 'react'
-import {Button} from "react-bootstrap"
+import {Button, Image} from "react-bootstrap"
+import { Link } from 'react-router-dom';
 import './App.css';
 
 const Inicio = () =>{
     return(
         <>
-        <div className="padreInicio ">
+        <div className="padreInicio">
+        
             <div className="p-5">
-        <h1 className="text-center my-5 text-white">Bienvenidos</h1>
-        {/* <img src="https://images.unsplash.com/photo-1592437923107-f91c5679e70b?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-         className="img-inicio"></img>     */}
+            <h1 className=" text-white text-center ">Bienvenidos</h1>
+        
          <br></br>
-          <Button className="btn-inicio1 mt-4 form-control">Registrarse</Button>  <br></br>
-          <Button  className="btn-inicio2 mt-4 form-control">Iniciar sesión</Button>
+          <Button className="btn-inicio1 mt-5 form-control ">Registrarse</Button>  <br></br>
+          <Button  className="btn-inicio2  mt-1 form-control" > Iniciar sesión</Button>
           </div>
           </div>
          </>
