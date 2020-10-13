@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 .registrar{
   margin: auto;
   max-width: 500px;
 }
 .btnRegistro{
-  background-color:rgb(250, 85, 8);
+  background-color:#fa5508;
   border: 1px solid lightseagreen;
+  border-radius: 15px;
 }
-
-@media (min-width:260px) and (max-width:750px){
-.registrar{
-  background-color: rgb(252, 252, 252);
-  min-height: 100vh;
+.estiloregistro{
+  height: 95vh;
+  border-radius: 30px;
+  background-color: rgb(255, 254, 254);
+  box-shadow: 1.8px 1.8px  #fa5508;
 }
 .img-inicio{
   height: 180px;
@@ -31,7 +33,7 @@ background-image: url(../src/img/fondo-app-final.png);
 }
 .padreInicio:before{
   content: "";
-  background-color: rgba(59, 96, 175, 0.89);
+  background-color: rgba(48, 73, 182, 0.849);
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -42,17 +44,12 @@ background-color: white !important;
 border: solid 1px rgb(250, 85, 8);
 color: rgb(250, 85, 8);
 border-radius: 15px;
-opacity: 0.7;
-
-
 
 }
 .btn-inicio1{
   background-color: rgb(250, 85, 8) !important;
   border: solid 1px black;
   border-radius: 15px;
-  bottom: 30px;
-  opacity: 0.7;
   
 }
 .padreInicio .btn-inicio1, h1, .btn-inicio2{
@@ -60,7 +57,77 @@ opacity: 0.7;
   
 }
 .content-vacio{
-  height: 150px;
+  height: 250px!important;
+  width: 100%;
+}
+.tituloReg{
+  color: rgb(61, 59, 59);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@media (min-width:260px) and (max-width:750px){
+.registrar{
+  background-color: rgb(184, 186, 189);
+  min-height: 100vh;
+  margin: auto;
+  max-width: 500px
+}
+.estiloregistro{
+  height: 95vh;
+  border-radius: 30px;
+  background-color: rgb(255, 254, 254);
+  box-shadow: 1.8px 1.8px  #fa5508;
+}
+.padreInicioSes{
+  background-color: rgb(184, 186, 189);
+  min-height: 100vh;
+  max-width: 500px
+}
+.img-inicio{
+  height: 180px;
+ 
+}
+.padreInicio{
+  height: 100vh !important;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+background-image: url(../src/img/fondo-app-final.png);
+  /* background-image: url(https://images.unsplash.com/photo-1554260570-83dc2f46ef79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80); */
+
+
+
+}
+.padreInicio:before{
+  content: "";
+  background-color: rgba(48, 73, 182, 0.849);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  opacity: 0.5;
+}
+.btn-inicio2{
+background-color: white !important;
+border: solid 1px rgb(250, 85, 8);
+color: rgb(250, 85, 8);
+border-radius: 15px;
+
+}
+.btn-inicio1{
+  background-color: rgb(250, 85, 8) !important;
+  border: solid 1px black;
+  border-radius: 15px;
   
 }
+.padreInicio .btn-inicio1, h1, .btn-inicio2{
+  position: relative !important;
+  
+}
+.content-vacio{
+  height: 250px!important;
+  width: 100%;
+}
+
 }

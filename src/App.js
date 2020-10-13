@@ -1,8 +1,9 @@
 import React from 'react';
-import './App.css';
 import Register from "./Register"
 import Inicio from "./Inicio"
+import InicioSesion from "./InicioSesion"
 import {BrowserRouter as Router, Switch, Route,} from "react-router-dom";
+import './App.css';
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
           <Route path="/register" exact>
         
             <Register />
+          </Route>
+          <Route path="/Inicio-sesion" exact>
+        
+            <InicioSesion />
           </Route>
         
         </Switch>

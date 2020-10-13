@@ -14,8 +14,9 @@ const Register = () =>{
   }
     return(
         <>
-        <div className="registrar p-5">
-        <h2 className="text-center my-3">Registro</h2>
+        <div className="registrar p-3">
+            <div className="estiloregistro p-5">
+        <h2 className="text-center my-3 tituloReg">Registrarme</h2>
         <Form onSubmit={handleSubmit(onSubmit)}>
   <Form.Group controlId="formBasicEmail">
     <Form.Control
@@ -156,7 +157,7 @@ const Register = () =>{
   </Button>
 
 </Form>
-
+</div>
 </div>
         </>
     )
