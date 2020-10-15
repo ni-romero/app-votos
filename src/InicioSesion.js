@@ -17,12 +17,17 @@ const InicioSesion = () => {
 
             <div className="estiloregistro p-4">
 
-            <h1 className="text-center tituloInciarSes my-4"> Iniciar Sesion</h1>
-            <br></br> 
-            <br></br> 
+            <h2 className="text-center tituloInciarSes my-2"> Iniciar Sesion</h2>
+            {/* <div className="d-flex justify-content-center img-inSesion">
+            <i className="fas fa-user text-center fa-5x"></i>
+            </div> */}
+           <div className="img-inSesion"></div>
+         
+            
             <Form onSubmit={handleSubmit(onSubmit)}>
   <Form.Group controlId="formBasicNombre">
     <Form.Control
+    className="mt-3"
      type="nombre"
       placeholder="Ingrese nombre"
        name="nombre"
@@ -70,7 +75,7 @@ const InicioSesion = () => {
     {errors.contrasena && errors.contrasena.message}
 </span>
   </Form.Group>
-  <Button className="form-control btnRegistro my-4" type="submit">Enviar</Button>
+  <Button className="form-control btnRegistro my-2" type="submit">Enviar</Button>
 
   </Form>
             </div>

@@ -12,8 +12,8 @@ const Inicio = () =>{
             <h1 className=" text-white text-center ">Bienvenidos</h1>
            <div className="content-vacio"></div> 
     
-          <Button className="btn-inicio1 mb-1 form-control ">Registrarse</Button>  <br></br>
-          <Button  className="btn-inicio2 form-control" > Iniciar sesión</Button>
+          <Button className="btn-inicio1 my-2 form-control ">Registrarse</Button>  <br></br>
+          <Button  className="btn-inicio2 my-2 form-control" > Iniciar sesión</Button>
           </div>
           </div>
          </>
