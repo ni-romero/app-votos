@@ -1,12 +1,12 @@
 import React from 'react'
 import {Form, Button} from "react-bootstrap"
 import { useForm } from 'react-hook-form'
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import './App.css';
 
 const InicioSesion = () => {
 
-    let history = useHistory();
+    // let history = useHistory();
     const {register, errors, handleSubmit} = useForm();
 
     const onSubmit = (data, e) => {
@@ -17,7 +17,7 @@ const InicioSesion = () => {
         <>
         <div className="padreInicioSes p-3">
 
-            <div className="estiloregistro p-4">
+            <div className="estiloregistro p-5">
 
             <h2 className="text-center tituloInciarSes my-2"> Iniciar Sesion</h2>
             {/* <div className="d-flex justify-content-center img-inSesion">
@@ -78,7 +78,7 @@ const InicioSesion = () => {
 </span>
   </Form.Group>
   <Button className="form-control btnRegistro my-2" type="submit"
-  onClick={() => history.push("/")}>Enviar</Button>
+  >Enviar</Button>
 
   </Form>
             </div>

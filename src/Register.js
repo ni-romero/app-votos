@@ -1,13 +1,13 @@
 import React from 'react'
 import {Form, Button} from "react-bootstrap"
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import { useForm } from 'react-hook-form'
 import './App.css';
 
 
 const Register = () =>{
 
-    let history = useHistory();
+    // let history = useHistory();
   const {register, errors, handleSubmit} = useForm();
 
   const onSubmit = (data, e) => {
@@ -97,9 +97,28 @@ const Register = () =>{
 
   <Form.Group controlId="exampleForm.ControlSelect1">
     <Form.Control as="select" name="seccion">
-      <option> Sección 1</option>
-      <option> Sección 2</option>
+      <option disabled selected> Sección 1</option>
+      <option value="alberdi"> Alberdi</option>
+      <option value="chicligasta"> Chicligasta</option>
+      <option value="famailla"> Famaillá</option>
+      <option value="laCocha"> La Cocha</option>
+      <option value="lules"> Lules</option>
+      <option value="monteros">Monteros</option>
+      <option value="tafiDelValle">Tafí del Valle</option>
+      <option value="tafiViejo">Tafi Viejo</option>
+      <option value="YerbaBuena">Yerba Buena</option>
+      
+      <option disabled> Sección 2 </option>
+      <option value="burruyacu">Burruyacú</option>
+      <option value="alberdi"> Alberdi</option>
+      <option value="cruzAlta">Cruz Alta</option>
+      <option value="graneros">Graneros</option>
+      <option value="leales"> Leales</option>
+      <option value="simoca">Simoca</option>
+      <option value="trancas">Trancas</option>
+     
       <option> Sección 3</option>
+      <option value="capital">Capital</option>
     </Form.Control>
   </Form.Group>
 
@@ -155,8 +174,7 @@ const Register = () =>{
 
 
   <Button className="form-control btnRegistro" type="submit"
-  onClick={() => history.push("/inicio-sesion")}
-  >
+    >
   Enviar
   </Button>
 
