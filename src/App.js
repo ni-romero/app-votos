@@ -2,6 +2,8 @@ import React from 'react';
 import Register from "./Register"
 import Inicio from "./Inicio"
 import InicioSesion from "./InicioSesion"
+import Perfil from "./Perfil/Perfil"
+import Concejales from "./Concejales"
 import {BrowserRouter as Router, Switch, Route,} from "react-router-dom";
 import './App.css';
 
@@ -16,12 +18,16 @@ function App() {
             <Inicio />
           </Route>
           <Route path="/register" exact>
-        
             <Register />
           </Route>
           <Route path="/Inicio-sesion" exact>
-        
             <InicioSesion />
+          </Route>
+          <Route path="/Perfil" exact>
+            <Perfil/>
+          </Route>
+          <Route path="/diputados" exact>
+            <Concejales/>
           </Route>
         
         </Switch>

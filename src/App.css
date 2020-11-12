@@ -41,13 +41,13 @@ background-image: url(../src/img/fondo-app-final.png);
 }
 .btn-inicio2{
 background-color: white !important;
-border: solid 1px rgb(250, 85, 8);
-color: rgb(250, 85, 8);
+border: solid 1px #fa5508 !important;
+color:  rgb(231, 51, 28) !important;
 border-radius: 15px;
 
 }
 .btn-inicio1{
-  background-color: rgb(250, 85, 8) !important;
+  background-color:   #fa5508!important;
   border: solid 1px black;
   border-radius: 15px;
   
@@ -128,13 +128,13 @@ background-image: url(../src/img/fondo-app-final.png);
 }
 .btn-inicio2{
 background-color: white !important;
-border: solid 1px rgb(250, 85, 8);
-color: rgb(250, 85, 8);
+border: solid 1px #fa5508;
+color: #fa5508;
 border-radius: 15px;
 
 }
 .btn-inicio1{
-  background-color: rgb(250, 85, 8) !important;
+  background-color: #fa5508!important;
   border: solid 1px black;
   border-radius: 15px;
   
@@ -161,6 +161,16 @@ border-radius: 15px;
 }
 .form-control{
   border: 3px solid #ced4da !important;
+}
+.btnEstoy{
+  background-color:transparent !important;
+  color: #fa5508;
+  border: solid 2px #fa5508 !important
+  ;
+}
+.btnCierre{
+  background-color: #fa5508 !important;
+  border: solid 2px rgb(241, 87, 41) !important;
 }
 
 }
