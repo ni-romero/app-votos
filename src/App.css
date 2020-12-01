@@ -4,15 +4,17 @@
   max-width: 500px;
 }
 .btnRegistro{
-  background-color:#fa5508;
-  border: 1px solid rgb(231, 51, 28);
+  /* background-color:#2b9c86;
+  border: 1px solid rgb(85, 82, 82); */
+  background-color: rgb(41, 41, 41);
+  border: 1px solid #2b9c86 !important;
   border-radius: 15px;
 }
 .estiloregistro{
   height: 95vh;
   border-radius: 30px;
   background-color: rgb(255, 254, 254);
-  box-shadow: 1.8px 1.8px  #fa5508;
+  box-shadow: 1.8px 1.8px  #2b9c86;
 }
 .img-inicio{
   height: 180px;
@@ -25,29 +27,26 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-background-image: url(../src/img/fondo-app-final.png);
+/* background-image: url(../src/img/fondo-app-final.png); */
   /* background-image: url(https://images.unsplash.com/photo-1554260570-83dc2f46ef79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80); */
-
-
-
 }
-.padreInicio:before{
+/* .padreInicio:before{
   content: "";
-  background-color: rgba(48, 73, 182, 0.849);
+background-color: #9b9b9b !important ;
   height: 100vh;
   width: 100%;
   position: absolute;
   opacity: 0.5;
-}
+} */
 .btn-inicio2{
 background-color: white !important;
-border: solid 1px #fa5508 !important;
-color:  rgb(231, 51, 28) !important;
+border: solid 1px #2b9c86 !important;
+color:  rgb(73, 71, 71) !important;
 border-radius: 15px;
 
 }
 .btn-inicio1{
-  background-color:   #fa5508!important;
+  background-color:   #2b9c86!important;
   border: solid 1px black;
   border-radius: 15px;
   
@@ -58,7 +57,10 @@ border-radius: 15px;
 }
 .content-vacio{
   height: 250px!important;
-  width: 100%;
+  width: 80%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .tituloReg{
   color: rgb(61, 59, 59);
@@ -77,15 +79,17 @@ border-radius: 15px;
  
 
 }
-.form-control{
+/* .form-control{
   border: 3px solid #ced4da !important;
   border-radius: 10px!important;
-}
+} */
 
 
 @media (min-width:260px) and (max-width:750px){
 .registrar{
-  background-color: rgb(74, 91, 117);
+  background-image: url(../src/img/fondo-app-final.png);
+  background-size: cover;
+  overflow: hidden;
   min-height: 100vh;
   margin: auto;
   max-width: 500px
@@ -94,10 +98,13 @@ border-radius: 15px;
   height: 95vh;
   border-radius: 30px;
   background-color: rgb(255, 254, 254);
-  box-shadow: 1.8px 1.8px  #fa5508;
+  box-shadow: 1.8px 1.8px  #2b9c86;
+  opacity: 0.9;
 }
 .padreInicioSes{
-  background-color: rgb(74, 91, 117);
+ background-image: url(../src/img/fondo-app-final.png);
+ background-size: cover;
+ overflow: hidden;
   min-height: 100vh;
   max-width: 500px
 }
@@ -112,31 +119,37 @@ border-radius: 15px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-background-image: url(../src/img/fondo-app-final.png);
+  background-color: black;
+/* background-image: url(../src/img/fondo-app-final.png); */
   /* background-image: url(https://images.unsplash.com/photo-1554260570-83dc2f46ef79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80); */
 
 
 
 }
-.padreInicio:before{
+
+/* .padreInicio:before{
   content: "";
-  background-color: rgba(48, 73, 182, 0.849);
+  background-color: #5b5c5b !important ;
   height: 100vh;
   width: 100%;
   position: absolute;
   opacity: 0.5;
-}
+} */
 .btn-inicio2{
-background-color: white !important;
-border: solid 1px #fa5508;
-color: #fa5508;
+background-color: #17202A!important;
+border:solid 1px #1ABC9C!important;
+color:  #9b9b9b !important;
 border-radius: 15px;
+font-size:1.2rem!important;
 
 }
 .btn-inicio1{
-  background-color: #fa5508!important;
-  border: solid 1px black;
+  background-color: #17202A!important;
+  border:solid 1px #1ABC9C!important;
+  color:  #9b9b9b !important;
   border-radius: 15px;
+  font-size:1.2rem!important;
+  
   
 }
 .padreInicio .btn-inicio1, h1, .btn-inicio2{
@@ -144,8 +157,13 @@ border-radius: 15px;
   
 }
 .content-vacio{
-  height: 250px!important;
-  width: 100%;
+  background-image: url(../src/img/1721907.svg);
+  height: 250px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 25%;
 }
 .img-inSesion{
   background-image: url(./img/avat.jpg);
@@ -159,18 +177,19 @@ border-radius: 15px;
  
 
 }
-.form-control{
+/* .form-control{
   border: 3px solid #ced4da !important;
-}
+} */
 .btnEstoy{
   background-color:transparent !important;
-  color: #fa5508;
-  border: solid 2px #fa5508 !important
-  ;
+  color: #2b9c86;
+  border: solid 2px #2b9c86 !important ;
+  border-radius: 30px!important;
 }
 .btnCierre{
-  background-color: #fa5508 !important;
-  border: solid 2px rgb(241, 87, 41) !important;
+  background-color: #2b9c86 !important;
+  border: solid 2px #2b9c86 !important;
+  border-radius: 30px!important;
 }
 
 }
