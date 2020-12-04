@@ -163,7 +163,8 @@ font-size:1.2rem!important;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  border-radius: 25%;
+  margin: auto;
+
 }
 .img-inSesion{
   background-image: url(./img/avat.jpg);

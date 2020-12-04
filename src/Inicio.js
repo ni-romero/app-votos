@@ -10,11 +10,11 @@ const Inicio = () =>{
         <>
         <div className="padreInicio">
         
-            <div className="p-5">
+            <div className="m-auto p-4">
             <h1 className=" text-white text-center "> Fuerza Fiscal</h1>
-           <div className="content-vacio">
+           <div className="content-vacio p-4">
                </div> 
-    
+            <br></br>
           <Button className="btn-inicio1 my-2 form-control"
            onClick={() => history.push("/register")} >Registrarse</Button>  <br></br>
           <Button  className="btn-inicio2 my-3 form-control"
