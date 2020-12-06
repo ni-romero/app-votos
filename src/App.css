@@ -95,7 +95,7 @@ border-radius: 15px;
   max-width: 500px
 }
 .estiloregistro{
-  height: 95vh;
+  min-height: 95vh;
   border-radius: 30px;
   background-color: rgb(255, 254, 254);
   box-shadow: 1.8px 1.8px  #2b9c86;
