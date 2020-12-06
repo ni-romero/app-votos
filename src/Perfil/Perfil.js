@@ -1,8 +1,27 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import {useHistory} from 'react-router-dom'
+import Swal from 'sweetalert2'
+
+
 
 const Perfil = () => {
+
+    const MostrarAlerta =() =>{
+        Swal.fire(
+            'Estoy en la mesa',
+            'El horario de ingreso se registró con éxito!!',
+            'success'
+          )
+    }
+    const MostrarAlerta2 =() =>{
+        Swal.fire(
+            'Cierre de votación',
+            'El horario de cierre se registró con éxito!!',
+            'success'
+          )
+    }
+
     let history = useHistory();
     return(
 
@@ -14,9 +33,9 @@ const Perfil = () => {
             <br></br>
             <br></br>
             <br></br>
-            <Button className="form-control btnEstoy my-2" type="submit">
+            <Button className="form-control btnEstoy my-2" type="submit" onClick={()=>MostrarAlerta()}>
                 Estoy en la mesa</Button>
-            <Button className="form-control btnEstoy my-2" type="submit"
+            <Button className="form-control btnEstoy my-2" type="submit" onClick={()=>MostrarAlerta2()}
             >Cierre de votación</Button>
              <Button className="form-control btnCierre my-2" type="submit"
               onClick={() => history.push("/diputados")}
