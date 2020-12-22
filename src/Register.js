@@ -117,10 +117,33 @@ const Register = () =>{
       <option value="simoca">Simoca</option>
       <option value="trancas">Trancas</option>
      
-      <option> Sección 3</option>
+      <option disabled> Sección 3</option>
       <option value="capital">Capital</option>
     </Form.Control>
   </Form.Group>
+
+  <Form.Group controlId="exampleForm.ControlSelect2">
+    <Form.Control as="select" name="seccion">
+    <option disabled selected>Ciudad/Comuna</option>
+      <option value="municipio-burruyacu">Municipio Burruyacu</option>
+      <option value="comuna7abril"> Comuna 7 de abril</option>
+      <option value="comuna-benj-araoz">Comuna Benjamin Araoz y El tajamar</option>
+      <option value="comuna-elchanar">Comuna El Chañar</option>
+      <option value="comuna-elnaranjo">Comuna El Naranjo y El Sunchal</option>
+      <option value="comuna-elpuestito">Comuna El puestito</option>
+      <option value="comuna-eltimbo">Comuna El Timbó</option>
+      <option value="comuna-garmendia">Comuna Gorb. Garmendia</option>
+      <option value="comuna-laramada">Comuna La ramada y La cruz</option>
+      <option value="comuna-piedrabuena">Comuna Piedrabuena</option>
+      <option value="comuna-laramada">Comuna Villa padre Monti</option>
+    </Form.Control>
+  </Form.Group>
+
+  
+          
+      
+
+
 
   <Form.Group controlId="formBasicPassword">
     <Form.Control

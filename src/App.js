@@ -4,6 +4,7 @@ import Inicio from "./Inicio"
 import InicioSesion from "./InicioSesion"
 import Perfil from "./Perfil/Perfil"
 import Concejales from "./Concejales"
+import Senadores from "./Senadores"
 import {BrowserRouter as Router, Switch, Route,} from "react-router-dom";
 import './App.css';
 
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route path="/diputados" exact>
             <Concejales/>
+          </Route>
+          <Route path="/senadores" exact>
+            <Senadores/>
           </Route>
         
         </Switch>

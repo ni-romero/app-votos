@@ -2,7 +2,7 @@ import React from 'react'
 import { Form, Button } from 'react-bootstrap'
 import { useForm } from 'react-hook-form'
 
-const Concejales = () => {
+const Senadores = () => {
 
   // let history = useHistory();
   const { register, errors, handleSubmit } = useForm();
@@ -15,7 +15,7 @@ const Concejales = () => {
     <>
       <div className="padreInicioSes p-3">
         <div className="estiloregistro p-4">
-          <h1 className="text-center">Diputados</h1>
+          <h1 className="text-center">Senadores</h1>
           <Form onSubmit={handleSubmit(onSubmit)}>
 
             <Form.Group controlId="exampleForm.ControlSelect1">
@@ -120,4 +120,4 @@ const Concejales = () => {
     </>
   )
 }
-export default Concejales;
+export default Senadores;
