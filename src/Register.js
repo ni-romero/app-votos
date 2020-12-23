@@ -1,13 +1,13 @@
 import React from 'react'
 import {Form, Button} from "react-bootstrap"
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { useForm } from 'react-hook-form'
 import './App.css';
 
 
 const Register = () =>{
 
-    // let history = useHistory();
+    let history = useHistory();
   const {register, errors, handleSubmit} = useForm();
 
   const onSubmit = (data, e) => {
@@ -197,6 +197,7 @@ const Register = () =>{
 
 
   <Button className="form-control btnRegistro" type="submit"
+   onClick={() => history.push("/Inicio-sesion")}
     >
   Enviar
   </Button>

@@ -182,9 +182,15 @@ font-size:1.2rem!important;
   border: 3px solid #ced4da !important;
 } */
 .btnEstoy{
+  background-color:rgb(24, 24, 24) !important;
+  color: #b2f7e9;
+  border: solid 2px rgb(24, 24, 24)!important ;
+  border-radius: 30px!important;
+}
+.btnCantidaVot{
   background-color:transparent !important;
-  color: #2b9c86;
-  border: solid 2px #2b9c86 !important ;
+  color: #0a0a0a;
+  border: solid 2px#2b9c86!important ;
   border-radius: 30px!important;
 }
 .btnCierre{
