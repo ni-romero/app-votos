@@ -12,7 +12,7 @@ const Inicio = () => {
 
                 <div className="p-4">
                     <br></br>
-                    <h1 className=" text-white text-center "> Fuerza Fiscal</h1>
+                    <h1 className="titulo-inicio text-white text-center "> ___FUERZA FISCAL___</h1>
                     <br></br>  <br></br>
                     <div className="content-vacio p-4">
                     </div>

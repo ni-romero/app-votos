@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Form } from 'react-bootstrap'
-// import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import Swal from 'sweetalert2'
 
@@ -29,7 +29,7 @@ const Perfil = () => {
         )
     }
 
-    // let history = useHistory();
+    let history = useHistory();
     return (
 
         <>
@@ -64,7 +64,7 @@ const Perfil = () => {
                         </Form.Group>
 
                         <Button className="form-control btnCierre my-2" type="submit"
-                            // onClick={() => history.push("/diputados")}
+                            onClick={() => history.push("/diputados")}
                         > Siguiente</Button>
                     </Form>
 
