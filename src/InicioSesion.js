@@ -22,9 +22,7 @@ const InicioSesion = () => {
             <div className="estiloregistro p-5">
 
             <h2 className="text-center tituloInciarSes my-2"> Iniciar Sesion</h2>
-            {/* <div className="d-flex justify-content-center img-inSesion">
-            <i className="fas fa-user text-center fa-5x"></i>
-            </div> */}
+           
            <div className="img-inSesion"></div>
          
             

@@ -1,27 +1,40 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { Form, Button } from "react-bootstrap"
 import { useHistory } from "react-router-dom";
 import { useForm } from 'react-hook-form'
 import './App.css';
 const secciones = [
   {
-    "departamento" : "Burruyacu",
-    "ciudadComuna" : ["comuna 7 de abril", "Benjamin Araoz","El  chanar"]
-    
+    "departamento": "Burruyacu",
+    "ciudadComuna": ["comuna 7 de abril", "Benjamin Araoz y El Tajamar", "El  chanar", "El Naranjo y El Sunchal",
+      "El Pustito", "El Tombó", "Gob. Garmendia", "La Ramada y La Cruz", "PiedraBuena", "Villa Padre Monti"]
+
 
   },
   {
-    "departamento" : "Cruz alta",
-    "ciudadComuna" : ["alderetes", "banda del rio sali", "el delfin gallo"]
+    "departamento": "Cruz alta",
+    "ciudadComuna": ["alderetes", "banda del rio sali", "el delfin gallo", "Colombres",
+      "El Bracho y El Cevilar", "El Naranjito", " La florida y Luisiana", "Las Cejas", "Los Bulacio",
+      "Los Villagra", "Los Pereyra", "Los Perez", "Los ralos", "Ranchillos", "San Andrés"]
+  },
+  {
+    "departamento": "Graneros",
+    "ciudadComuna": ["Comuna La madrid", "Comuna Taco Ralo"]
+
+  },{
+    "departamento" : "Simoca",
+    "ciudadComuna" : ["Atahona", "Buena Vista", "Ciudacita", "Manuela Pedraza", "Monteagudo", "Pampa Mayo",
+     "Rio chico y Nueva Trinidad", "San Pedro y San Antonio", "Santa Cruz y La Tuna", "Villa Chicligasta", "Yerba Buena"]
   }
-  
+
+
 ]
 console.log("secciones", secciones)
 
 const Register = () => {
   const [Idcomuna, setIdComuna] = useState(-1)
-   
-  const handlerCargarSecciones = function (e){
+
+  const handlerCargarSecciones = function (e) {
     const opcion = e.target.value;
 
     setIdComuna(opcion);
@@ -120,7 +133,7 @@ const Register = () => {
                 <option value={-1}>Seleccione Seccion/Departamento</option>
                 {
                   secciones.map((item, i) => (
-                    <option key={"secciones"+ i} value={i}>{item.departamento}</option>
+                    <option key={"secciones" + i} value={i}>{item.departamento}</option>
                   ))
                 }
                 {/* <option disabled> Sección 1</option>
@@ -151,16 +164,16 @@ const Register = () => {
 
             <Form.Group controlId="exampleForm.ControlSelect2">
               <Form.Control as="select" name="cadaComuna" id="selCadaComuna">
-              
-               
+                <option value={-0}>Seleccione ciudado comuna</option>
+
                 {
-                  Idcomuna > -1 && 
-                  (secciones[Idcomuna].ciudadComuna.map((item,i) =>(
-                    <option key={"ciudadComuna"+ i}>{item}</option>
+                  Idcomuna > -1 &&
+                  (secciones[Idcomuna].ciudadComuna.map((item, i) => (
+                    <option key={"ciudadComuna" + i}>{item}</option>
                   ))
-                    )
+                  )
                 }
-                 {/* <option disabled selected>Ciudad/Comuna</option> */}
+                {/* <option disabled selected>Ciudad/Comuna</option> */}
                 {/* <option value="municipio-burruyacu" disabled selected>Municipio Burruyacu</option>
                 <option value="comuna7abril"> Comuna 7 de abril</option>
                 <option value="comuna-benj-araoz">Comuna Benjamin Araoz y El tajamar</option>
