@@ -7,7 +7,7 @@ const secciones = [
   {
     "departamento": "Burruyacu",
     "ciudadComuna": ["comuna 7 de abril", "Benjamin Araoz y El Tajamar", "El  chanar", "El Naranjo y El Sunchal",
-      "El Pustito", "El Tombó", "Gob. Garmendia", "La Ramada y La Cruz", "PiedraBuena", "Villa Padre Monti"]
+      "El Pustito", "El Timbó", "Gob. Garmendia", "La Ramada y La Cruz", "PiedraBuena", "Villa Padre Monti"]
 
 
   },

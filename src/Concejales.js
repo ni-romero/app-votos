@@ -46,7 +46,10 @@ const Concejales = () => {
                   required: {
                       value: true, 
                       message: 'Cantidad de votos Diputados es requerido'
-                      }
+                      }, maxLength: {
+                        value: 3,
+                        message: 'No más de 3 carácteres!'
+                      },
                     })}
               />    <span className="text-danger text-small d-block mb-2">
               {errors.diputados && errors.diputados.message}
@@ -63,7 +66,11 @@ const Concejales = () => {
                   required: {
                       value: true, 
                       message: 'Cantidad de votos Senadores es requerido'
-                      }
+                      },
+                      maxLength: {
+                        value: 3,
+                        message: 'No más de 3 carácteres!'
+                      },
                     })}
               /> <span className="text-danger text-small d-block mb-2">
               {errors.senadores && errors.senadores.message}
