@@ -187,18 +187,85 @@ font-size:1.2rem!important;
   border: solid 2px #2b9c86 !important;
   border-radius: 30px!important;
 }
-.paridoUno{
-  height: 100px;
-  width: 100px;
-background-image: url(../src/img/Logo_Fuerza_Republicana.png);
+.partidoUno{
+  height: 110px;
+  width: 110px;
+/* background-image: url(../src/img/Logo_Fuerza_Republicana.png); */
+background-color: blue;
 background-size: cover;
 background-repeat: no-repeat;
-border: solid 1px black;
 margin: auto;
+border-radius: 50% !important;
+box-shadow: 3px 3px 3px 3px rgb(30, 23, 129);
+display: flex;
+flex-direction: row;
+align-items: center;
 
+}
+.btnAzul{
+  background-color: blue;
+  border:blue ;
+}
+.partidoDos{
+  height: 110px;
+  width: 110px;
+  background-color: rgb(119, 194, 230);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  border-radius: 50% !important;
+  box-shadow: 3px 3px 3px 3px rgb(51, 173, 243); 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.btnCel{
+  background-color: rgb(119, 194, 230);
+  border: rgb(119, 194, 230) ; 
+}
+.partidoTres{
+  height: 110px;
+  width: 110px;
+  background-color: rgb(252, 19, 19);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  border-radius: 50% !important;
+  box-shadow: 3px 3px 3px 3px rgb(139, 6, 6);
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+.btnRojo{
+ background-color: rgb(252, 19, 19);
+ border: solid 1px  rgb(252, 19, 19);
+}
+.partidoCua{
+  height: 110px;
+  width: 110px;
+  background-color: rgb(255, 236, 65);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  border-radius: 50% !important;
+  box-shadow: 3px 3px 3px 3px rgb(250, 227, 21); 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.btnAma{
+  background-color: rgb(255, 236, 65);
+  border:  rgb(255, 236, 65);
 }
 .padrePartidos{
   margin: auto;
 }
+.btnSalir{
+  background-color: transparent !important;
+  border: solid 1.4px black !important;
+  color: #0a0a0a !important;
+  border-radius: 20px;
+  
+} 
 
 }

@@ -64,7 +64,7 @@ const Perfil = () => {
                         </Form.Group>
 
                         <Button className="form-control btnCierre my-2" type="submit"
-                            onClick={() => history.push("/diputados")}
+                            onClick={() => history.push("/partidos")}
                         > Siguiente</Button>
                     </Form>
 

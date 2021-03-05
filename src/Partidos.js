@@ -1,6 +1,8 @@
 import React from 'react'
-import {Container, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col, Button} from 'react-bootstrap'
+import { useHistory } from "react-router-dom";
 const Partidos = () => {
+    let history = useHistory();
     return (
         <>
             <div className="padreInicioSes container-fluid p-4">
@@ -10,14 +12,23 @@ const Partidos = () => {
                 <Container>
                 
                     <Row className="padrePartidos">
-                    <Col xs={5} className="paridoUno mb-2">
-                      
+                    
+                    <Col xs={5} className="partidoUno mb-3">
+                    <Button className="btnAzul" onClick={() => history.push("/diputados")}>Partido 4</Button>
                     </Col>
-                    <Col xs={5} className="paridoUno mb-2"></Col>
+                    <Col xs={5} className="partidoDos mb-3">
+                    <Button className="btnCel" onClick={() => history.push("/diputados")}>Partido 3</Button>
+                    </Col>
+                    
                     </Row>
                     <Row className="padrePartidos" >
-                    <Col xs={5} className="paridoUno"> </Col>
-                    <Col xs={5} className="paridoUno"></Col>
+                    <Col xs={5} className="partidoTres">
+                        <Button className="btnRojo" onClick={() => history.push("/diputados")}>Partido 3</Button>
+                     </Col>
+                    <Col xs={5} className="partidoCua">
+                    <Button className="btnAma" onClick={() => history.push("/diputados")}>Partido 4</Button>
+                   
+                    </Col>
                     </Row>
                 </Container>
 

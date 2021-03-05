@@ -1,10 +1,19 @@
 import React from 'react'
 import { Form, Button } from 'react-bootstrap'
 import { useForm } from 'react-hook-form'
+import Swal from 'sweetalert2'
+import { useHistory } from 'react-router-dom'
 
 const Concejales = () => {
+  const EnviarDatos = () => {
+    Swal.fire(
+        'Cantidad de votos enviados',
+        'Los datos ingresados se enviaron a la base datos!!',
+        'success'
+    )
+}
 
-  // let history = useHistory();
+  let history = useHistory();
   const { register, errors, handleSubmit } = useForm();
 
   const onSubmit = (data, e) => {
@@ -15,49 +24,51 @@ const Concejales = () => {
     <>
       <div className="padreInicioSes p-3">
         <div className="estiloregistro p-4">
-          <h1 className="text-center">Diputados</h1>
+          <h3 className="text-center">Detalle de Votos</h3>
           <Form onSubmit={handleSubmit(onSubmit)}>
 
             <Form.Group controlId="exampleForm.ControlSelect1">
-              <Form.Label>Seleccione partido</Form.Label>
+              <Form.Label>Confirme Partido</Form.Label>
               <Form.Control as="select">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
+                <option> PARTIDO 1</option>
+                <option> PARTIDO 2</option>
+                <option>PARTIDO 3</option>
+                <option>PARTIDO 4</option>
 
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlInput1">
+            <Form.Label>Diputados</Form.Label>
               <Form.Control type="text"
-                name="afirmativo"
-                placeholder="votos afirmativos"
+                name="diputados"
+                placeholder="Ingrese cantidad de votos DIPUTADOS"
                 ref={register({
                   required: {
                       value: true, 
-                      message: 'Cantidad de votos afirmativos es requerido'
+                      message: 'Cantidad de votos Diputados es requerido'
                       }
                     })}
               />    <span className="text-danger text-small d-block mb-2">
-              {errors.afirmativo && errors.afirmativo.message}
+              {errors.diputados && errors.diputados.message}
           </span>
             </Form.Group>
             <Form.Group
               controlId="exampleForm.ControlInput1">
+                  <Form.Label>Senadores</Form.Label>
               <Form.Control
                 type="text"
-                name="nulo"
-                placeholder="votos nulos"
+                name="senadores"
+                placeholder="Ingrese Cantidad de votos SENADORES"
                 ref={register({
                   required: {
                       value: true, 
-                      message: 'Cantidad de votos nulos es requerido'
+                      message: 'Cantidad de votos Senadores es requerido'
                       }
                     })}
               /> <span className="text-danger text-small d-block mb-2">
-              {errors.nulo && errors.nulo.message}
+              {errors.senadores && errors.senadores.message}
           </span>
-            </Form.Group>
+            {/* </Form.Group>
             <Form.Group
               controlId="exampleForm.ControlInput1">
               <Form.Control
@@ -110,10 +121,12 @@ const Concejales = () => {
                 type="total"
                 name="total"
                 placeholder="total"
-              />
+              /> */}
             </Form.Group>
-            <Button className="form-control btnEstoy my-2" type="submit">
+            <Button className="form-control btnEstoy my-2" type="submit" onClick={() => EnviarDatos()}>
               Enviar</Button>
+              <Button className="form-control btnSalir my-2" type="submit" onClick={() => history.push("/")}>
+              Salir</Button>
           </Form>
         </div>
       </div>
