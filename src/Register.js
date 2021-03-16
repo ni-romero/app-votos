@@ -40,7 +40,7 @@ const Register = () => {
     setIdComuna(opcion);
   }
 
-  let history = useHistory();
+  // let history = useHistory();
   const { register, errors, handleSubmit } = useForm();
 
   const onSubmit = (data, e) => {
@@ -302,7 +302,7 @@ const Register = () => {
 
 
             <Button className="form-control btnRegistro" type="submit"
-              onClick={() => history.push("/Inicio-sesion")}
+              // onClick={() => history.push("/Inicio-sesion")}
             >
               Enviar
   </Button>

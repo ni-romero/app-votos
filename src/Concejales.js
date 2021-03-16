@@ -24,7 +24,7 @@ const Concejales = () => {
     <>
       <div className="padreInicioSes p-3">
         <div className="estiloregistro p-4">
-          <h3 className="text-center">Detalle de Votos</h3>
+          <h3 className="text-center my-3">Detalle de Votos</h3>
           <Form onSubmit={handleSubmit(onSubmit)}>
 
             <Form.Group controlId="exampleForm.ControlSelect1">
@@ -75,64 +75,12 @@ const Concejales = () => {
               /> <span className="text-danger text-small d-block mb-2">
               {errors.senadores && errors.senadores.message}
           </span>
-            {/* </Form.Group>
-            <Form.Group
-              controlId="exampleForm.ControlInput1">
-              <Form.Control
-                type="text"
-                name="blanco"
-                placeholder="votos en blanco"
-                ref={register({
-                  required: {
-                      value: true, 
-                      message: 'Cantidad de votos en blanco es requerido'
-                      }
-                    })}
-              />  <span className="text-danger text-small d-block mb-2">
-              {errors.blanco && errors.blanco.message}
-          </span>
-            </Form.Group>
-            <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Control
-                type="text"
-                name="recurrido"
-                placeholder="votos recurridos"
-                ref={register({
-                  required: {
-                      value: true, 
-                      message: 'Cantidad de votos recurridos es requerido'
-                      }
-                    })} />
-                     <span className="text-danger text-small d-block mb-2">
-              {errors.recurrido && errors.recurrido.message}
-          </span>
-            </Form.Group>
-            <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Control
-                type="text"
-                name="impugnado"
-                placeholder="votos impugnados"
-                ref={register({
-                  required: {
-                      value: true, 
-                      message: 'Cantidad de votos impugnados es requerido'
-                      }
-                    })}
-              />
-               <span className="text-danger text-small d-block mb-2">
-              {errors.impugnado && errors.impugnado.message}
-          </span>
-            </Form.Group>
-            <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Control
-                type="total"
-                name="total"
-                placeholder="total"
-              /> */}
+         
             </Form.Group>
             <Button className="form-control btnEstoy my-2" type="submit" onClick={() => EnviarDatos()}>
               Enviar</Button>
-              <Button className="form-control btnSalir my-2" type="submit" onClick={() => history.push("/")}>
+              <Button className="form-control btnSalir my-2" type="submit" 
+              onClick={() => history.push("/")}>
               Salir</Button>
           </Form>
         </div>

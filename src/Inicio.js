@@ -14,11 +14,10 @@ const Inicio = () => {
                     <br></br>
                     <h1 className="titulo-inicio text-white text-center "> FUERZA FISCAL </h1>
                   
-                    <div className="content-vacio p-4">
+                    <div className="p-5 mb-5">
                     </div>
-                   
-                  
-                    <Button className="btn-inicio1 my-2 form-control"
+                    
+                    <Button className="btn-inicio1 mt-5 my-3 form-control"
                         onClick={() => history.push("/register")} >Registrarse</Button>  <br></br>
                     <Button className="btn-inicio2 my-3 form-control"
                         onClick={() => history.push("/inicio-sesion")} > Iniciar sesión</Button>

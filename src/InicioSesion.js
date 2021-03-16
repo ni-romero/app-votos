@@ -8,7 +8,7 @@ import './App.css';
 const InicioSesion = () => {
 
 
-    let history = useHistory();
+    // let history = useHistory();
     const {register, errors, handleSubmit} = useForm();
 
     const onSubmit = (data, e) => {
@@ -78,7 +78,7 @@ const InicioSesion = () => {
 </span>
   </Form.Group>
   <Button className="form-control btnRegistro my-2" type="submit"
-   onClick={() => history.push("/Perfil")}
+//    onClick={() => history.push("/Perfil")}
   >Enviar</Button>
 
   </Form>

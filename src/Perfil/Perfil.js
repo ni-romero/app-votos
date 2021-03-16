@@ -29,7 +29,8 @@ const Perfil = () => {
         )
     }
 
-    let history = useHistory();
+    // let history = useHistory();
+
     return (
 
         <>
@@ -64,7 +65,7 @@ const Perfil = () => {
                         </Form.Group>
 
                         <Button className="form-control btnCierre my-2" type="submit"
-                            onClick={() => history.push("/partidos")}
+                            // onClick={() => history.push("/partidos")}
                         > Siguiente</Button>
                     </Form>
 
