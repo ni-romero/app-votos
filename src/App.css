@@ -191,71 +191,71 @@ font-size:1.2rem!important;
   height: 110px;
   width: 110px;
 /* background-image: url(../src/img/Logo_Fuerza_Republicana.png); */
-background-color: blue;
+background-color: rgb(82, 82, 235);
 background-size: cover;
 background-repeat: no-repeat;
 margin: auto;
 border-radius: 50% !important;
-box-shadow: 3px 3px 3px 3px rgb(30, 23, 129);
+box-shadow: 3px 3px 3px 3px rgb(82, 82, 235);
 display: flex;
 flex-direction: row;
 align-items: center;
 
 }
 .btnAzul{
-  background-color: blue;
-  border:blue ;
+  background-color: rgb(82, 82, 235);
+  border:rgb(82, 82, 235) ;
 }
 .partidoDos{
   height: 110px;
   width: 110px;
-  background-color: rgb(119, 194, 230);
+  background-color: rgb(33, 109, 145);
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
   border-radius: 50% !important;
-  box-shadow: 3px 3px 3px 3px rgb(51, 173, 243); 
+  box-shadow: 3px 3px 3px 3px rgb(33, 109, 145); 
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .btnCel{
-  background-color: rgb(119, 194, 230);
-  border: rgb(119, 194, 230) ; 
+  background-color: rgb(33, 109, 145);
+  border: rgb(33, 109, 145) ; 
 }
 .partidoTres{
   height: 110px;
   width: 110px;
-  background-color: rgb(252, 19, 19);
+  background-color: rgb(34, 41, 104);
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
   border-radius: 50% !important;
-  box-shadow: 3px 3px 3px 3px rgb(139, 6, 6);
+  box-shadow: 3px 3px 3px 3px rgb(34, 41, 104);
   display: flex;
   flex-direction: row;
   align-items: center; 
 }
 .btnRojo{
- background-color: rgb(252, 19, 19);
- border: solid 1px  rgb(252, 19, 19);
+ background-color: rgb(34, 41, 104);
+ border: solid 1px  rgb(34, 41, 104);
 }
 .partidoCua{
   height: 110px;
   width: 110px;
-  background-color: rgb(255, 236, 65);
+  background-color: rgb(23, 24, 65);
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
   border-radius: 50% !important;
-  box-shadow: 3px 3px 3px 3px rgb(250, 227, 21); 
+  box-shadow: 3px 3px 3px 3px rgb(23, 24, 65); 
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .btnAma{
-  background-color: rgb(255, 236, 65);
-  border:  rgb(255, 236, 65);
+  background-color: rgb(23, 24, 65);
+  border:  rgb(23, 24, 65);
 }
 .padrePartidos{
   margin: auto;

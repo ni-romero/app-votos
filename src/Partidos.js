@@ -14,10 +14,10 @@ const Partidos = () => {
                     <Row className="padrePartidos">
                     
                     <Col xs={5} className="partidoUno mb-3">
-                    <Button className="btnAzul" onClick={() => history.push("/diputados")}>Partido 4</Button>
+                    <Button className="btnAzul" onClick={() => history.push("/diputados")}>Partido 1</Button>
                     </Col>
                     <Col xs={5} className="partidoDos mb-3">
-                    <Button className="btnCel" onClick={() => history.push("/diputados")}>Partido 3</Button>
+                    <Button className="btnCel" onClick={() => history.push("/diputados")}>Partido 2</Button>
                     </Col>
                     
                     </Row>

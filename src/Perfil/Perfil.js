@@ -1,13 +1,16 @@
 import React from 'react'
 import { Button, Form } from 'react-bootstrap'
-import { useHistory } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import Swal from 'sweetalert2'
+import moment from 'moment'
+
+import "moment/locale/es";
 
 
-
-const Perfil = () => {
+const Perfil = ({fecha}) => {
     const { register, errors, handleSubmit } = useForm();
+ 
 
     const onSubmit = (data, e) => {
         console.log(data)
@@ -16,18 +19,32 @@ const Perfil = () => {
 
     const MostrarAlerta = () => {
         Swal.fire(
+            
             'Estoy en la mesa',
             'El horario de ingreso se registró con éxito!!',
             'success'
+           
         )
+        console.log( 'HORA Y FECHA DE INICIO :',
+            moment().format("h:mm:ss a, Do [de] MMMM [del] YYYY")
+           )
+  
     }
     const MostrarAlerta2 = () => {
         Swal.fire(
+           
             'Cierre de votación',
-            'El horario de cierre se registró con éxito!!',
+            'El horario de cierre se registró con éxito!!' ,
             'success'
+            
         )
+        console.table( 'HORA Y FECHA DE CIERRE:',
+            moment().format("h:mm:ss a, Do [de] MMMM [del] YYYY")
+           )
+       
+      
     }
+  
 
     // let history = useHistory();
 
@@ -68,7 +85,6 @@ const Perfil = () => {
                             // onClick={() => history.push("/partidos")}
                         > Siguiente</Button>
                     </Form>
-
                 </div>
             </div>
         </>
